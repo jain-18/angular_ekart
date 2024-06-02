@@ -1,6 +1,6 @@
 <div class="expert--search--product">
-  <input class="expert-search-product-input" [(ngModel)]="searchText" (input)="onSearchTextChanged()" />
-  <button [ngClass]="{'btn' : true, 'btn-search' : searchText,'btn-search-disabled': !searchText}" class="btn btn-search" [disabled]="!searchText">Search</button>
+  <input class="expert-search-product-input" #searchInput/>
+  <button class="btn btn-search" (click)="updateSearchText(searchInput)">Search</button>
 </div>
 <p class="para">
   <a class="expert-search-results-for">
