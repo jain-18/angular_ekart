@@ -1,0 +1,62 @@
+/* Add this to your styles.css or appropriate CSS file */
+
+/* Container for the search input and button */
+.expert--search--product {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0; /* Margin for spacing */
+    max-width: 50%;
+    margin: auto;
+    margin-top: 1%;
+  }
+  
+  /* Style the search input */
+  .expert-search-product-input {
+    flex: 1; /* Make the input take up available space */
+    padding: 0.5rem; /* Padding inside the input */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 4px 0 0 4px; /* Rounded corners on the left */
+    font-size: 1rem; /* Font size */
+    
+  }
+  
+  /* Style the search button */
+  .btn.btn-search {
+    padding: 0.5rem 1rem; /* Padding inside the button */
+    background-color: #4CAF50; /* Background color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 0 4px 4px 0; /* Rounded corners on the right */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1rem; /* Font size */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    text-align: center;
+  }
+  
+  /* Hover effect for the search button */
+  .btn.btn-search:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  /* Style the search result message */
+  .expert-search-results-for {
+    display: block; /* Make it a block-level element */
+    margin-top: 1rem; /* Margin on top for spacing */
+    font-size: 1rem; /* Font size */
+    color: #333; /* Text color */
+    text-decoration: none; /* Remove underline */
+    
+  }
+  
+  /* Bold text for the search keyword */
+  .expert-search-results-for strong {
+    font-weight: bold; /* Bold text */
+  }
+  .btn-search-disabled{
+    padding: 9px 19px;
+    background-color: #f4f4f4;
+    margin-left: -1px;
+    color: #999;
+    border: 1px solid;
+    cursor: not-allowed ;
+}

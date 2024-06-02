@@ -1,0 +1,38 @@
+/* Add this to your styles.css or appropriate CSS file */
+
+/* Reset some basic elements */
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  /* Style the navigation bar */
+  nav {
+    background-color: #4CAF50; /* Background color for the nav bar */
+    padding: 1rem 0; /* Padding around the nav bar */
+  }
+  
+  nav ul {
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: center; /* Center the nav items */
+    align-items: center; /* Vertically center the nav items */
+  }
+  
+  nav ul li {
+    margin: 0 1rem; /* Space between nav items */
+  }
+  
+  nav ul li a {
+    color: white; /* White text color for links */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 1rem; /* Font size for links */
+    padding: 0.5rem 1rem; /* Padding around links */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+  }
+  
+  nav ul li a:hover {
+    background-color: #45a049; /* Darker green background on hover */
+    border-radius: 4px; /* Rounded corners on hover */
+  }
+  
