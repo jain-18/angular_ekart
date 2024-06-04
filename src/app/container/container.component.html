@@ -17,12 +17,30 @@
 
   <!-- <input (input)="onNamechange($event)" /><br />
   <p>name : {{ name }}</p> -->
-  <app-search 
-  (searchTextChanged)="setSearchText($event)">
-</app-search>
+  <app-search (searchTextChanged)="setSearchText($event)">
+  </app-search>
   <!-- <div *ngFor="let item of listOfString">
     <p>Current element of array is : {{ item }}</p>
   </div> -->
   <product-list [searchText]="searchText" #productListComponent></product-list>
-  <product-detail *ngIf="productListComponent.selectedProduct" [productListComp]="productListComponent"></product-detail>
+  <product-detail *ngIf="productListComponent.selectedProduct"
+    [productListComp]="productListComponent"></product-detail>
+
+  <div class="ekart-featured-products">
+    <div class="ekart-featured-product-heading">
+      <h1>Latest Arrival in Popular Brands</h1>
+    </div>
+    <featured-brands>
+      <h3 class="title">New Arrivals in Nike</h3>
+      <button class="call-to-action">Show new arrival in Nike</button>
+    </featured-brands>
+    <featured-brands>
+      <h3 class="title">New Arrivals in Adidas</h3>
+      <button class="call-to-action">Show new arrival in Adidas</button>
+    </featured-brands>
+    <featured-brands>
+      <h3 class="title">New Arrivals in Puma</h3>
+      <button class="call-to-action">Show new arrival in Puma</button>
+    </featured-brands>
+  </div>
 </div>
